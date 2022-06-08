@@ -1,0 +1,27 @@
+.App {
+    background-image: url("../../image/4490229.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+
+.form-login {
+    background: #2F403A;
+    text-align: center;
+    width: 350px;
+    border-radius: 8px;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.login-btn:focus {
+    transform: scale(1.05);
+}

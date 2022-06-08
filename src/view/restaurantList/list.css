@@ -1,0 +1,142 @@
+.container-list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-button {
+    border-radius: 8px;
+}
+
+table {
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+th, td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    cursor: default;
+}
+
+.search-button {
+    border: 1px solid #2F403A;
+    text-align: center;
+    outline: none;
+}
+
+.table-buttons {
+    border-radius: 8px;
+    border: 1px solid silver;
+    width: 40px;
+}
+
+.table-buttons:hover {
+    color: white;
+    background-color: #2F403A;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+thead th {
+    background-color: #2F403A;
+}
+
+
+tbody tr:hover {
+    background-color: rgba(188, 203, 188, 0.3);
+    /*background-color: #d0d0d0;*/
+}
+
+tbody td {
+    position: relative;
+    color: #4d4d4d !important;
+}
+
+tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+
+    background-color: rgba(198, 203, 198, 0.3);
+    z-index: -1;
+}
+
+.table-tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.skeleton {
+    margin-right: 10px;
+}
+
+.table-tools div {
+    margin-right: 10px;
+}
+
+tbody td {
+    height: 60px!important;
+}
+
+.table-data {
+    text-align: center;
+    height: 100px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.search-box {
+    display: flex;
+    background: #fff;
+    height: 28px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+/*.search-button {*/
+/*    border: none;*/
+/*    border-radius: 8px 0 0 8px;*/
+/*}*/
+
+/*.search-icon {*/
+/*    border: none;*/
+/*    background: white;*/
+/*    outline: none;*/
+/*    cursor: pointer;*/
+/*    border-radius: 0 8px 8px 0;*/
+/*}*/
+
+/*/////////Response//////////*/
+
+@media (max-width: 769px) {
+    .container-list {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px !important;
+    }
+
+}

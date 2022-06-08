@@ -1,0 +1,248 @@
+/* NAVBAR */
+
+/*#2F403A*/
+/*#F9E0B9*/
+/*#9C8F72*/
+/*#6CF63F*/
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ant-dropdown-link {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-user-icon {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0 0 0 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-user-fullName {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2F403A;
+}
+
+.navigations {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    display: flex!important;
+    flex-wrap: wrap;
+    justify-content: center!important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.uppercase {
+    text-transform: capitalize;
+    margin: 0;
+    height: 100%;
+}
+
+.navbar-name {
+    color: white;
+    margin: 0 5px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-user-fullName {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-user-icon .userIcon:hover {
+    transform: scale(1.2);
+}
+
+.navbar-user-icon .userIcon:active {
+    transform: scale(1);
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: transparent;
+    border: none;
+}
+
+.ant-select.ant-select-single.ant-select-show-arrow {
+    background-color: transparent;
+}
+
+.ant-select-selection-item {
+    padding: 0 !important;
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    box-shadow: none;
+}
+
+/* SIDEBAR */
+
+.sidebar-content ul {
+    list-style-type: none!important;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sidebar-content ul li {
+    text-align: left;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #9C8F72;
+}
+
+
+ul a {
+    color: #9C8F72;
+    /*margin-left: 5px;*/
+}
+
+ul a:hover{
+    color: #9C8F72;
+}
+
+.sidebar {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.8s;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.sidebar.active {
+    pointer-events: all;
+    margin-left: 300px;
+    background-color: rgba(0, 0, 0, 0.29);
+}
+
+.sidebar-content {
+    /*background-image: linear-gradient(30deg, #2F403A, #2F403A);*/
+    /*border-bottom-right-radius: 80px;*/
+    overflow: hidden!important;
+    background-color: #2F403A;
+    height: 100vh;
+    width: 300px;
+    color: #9C8F72;
+    text-decoration: none!important;
+    list-style-type: none!important;
+    margin-left: -300px;
+    text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.h2, h2 {
+    font-size: 20px;
+}
+
+.scale-icon {
+    font-size: 20px!important;
+}
+
+.scale-icon:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+    transition: 0.3s;
+}
+
+.scale-icon:focus {
+    transform: scale(1);
+}
+
+.lihover {
+    align-items: center;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.lihover:hover {
+    background-color: rgba(156, 143, 114, 0.38);
+    color: white;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 108%;
+}
+
+.line-active {
+    width: 108%;
+    height: 35px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    background-color: #9C8F72;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 5px solid white;
+    color: white!important;
+}
+
+.line-active a {
+    color: white!important;
+}
+
+.line-active:active {
+    color: white!important;
+}
+
+/*/////////Response//////////*/
+
+@media (max-width: 769px) {
+    .row {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+@import '~antd/dist/antd.css';
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+
+/*ul > a{*/
+/*  margin: 0;*/
+/*}*/
+
+.nomard {
+    background-image: url('image/1878159_edited.jpg');
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: -10;
+    opacity: 0.04;
+    background-repeat: repeat-y;
+}
+.no-data{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.no-data > h2{
+    font-size: 80px;
+    font-weight: bold;
+    color: #1c1a1a;
+}
+/*////////////////////////////////*/
+.ant-input-group-addon:first-child{
+    width: 80px;
+}
+
+.ant-input-group-addon{
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+}
+
+.ant-input-group-addon:first-child {
+    width: 45px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+

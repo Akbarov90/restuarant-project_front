@@ -1,0 +1,24 @@
+.search {
+    height: 20px!important;
+    margin: 0!important;
+    border: none;
+    background-color: transparent;
+}
+
+.searchch {
+    cursor: pointer;
+    transition: 1s;
+}
+
+.searchch:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.search::after {
+    box-shadow: none;
+}
+
+html {
+    --antd-wave-shadow-color: none;
+}

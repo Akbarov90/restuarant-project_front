@@ -1,0 +1,208 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal.active{
+    border-radius: 8px;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content{
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    text-transform: uppercase;
+    width: 550px;
+    transform: scale(0.5);
+    transition: 0.4s all;
+}
+
+.modal-content.active{
+    transform: scale(1);
+}
+.modal-button{
+    float: right;
+    margin-top: 4px;
+}
+.modal-button button{
+    margin: 2px;
+}
+
+.ant-form-item .ant-select, .ant-form-item .ant-cascader-picker {
+    width: 96%!important;
+}
+
+.ant-col.ant-form-item-label {
+    width: 164px;
+}
+
+.modal-form input{
+    border-radius: 8px;
+    width: 96%!important;
+    margin: 5px 0;
+    border: 1px solid rgba(128, 128, 128, 0.29);
+    padding: 4px 3px;
+    outline: none;
+    float: right;
+}
+.modal-form input:hover{
+    border-color: #2F403A;
+}
+.modal-form input:focus{
+    border-color: #2F403A;
+}
+
+.ant-input:focus, .ant-input-focused {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-header h2 {
+    margin: 0;
+}
+
+.span-x {
+    font-size: 24px;
+    cursor: default;
+}
+
+.modal-btn {
+    background: #2F403A;
+    width: 166.4px;
+    border: none;
+    border-radius: 8px;
+    float: right;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ant-btn-danger {
+    border-radius: 8px;
+    background-color: #2F403A;
+    border: none;
+}
+
+.ant-btn-danger:focus {
+    background-color: #2F403A;
+}
+
+.ant-btn-danger:hover {
+    background-color: #2F403A;
+}
+
+.ant-btn-primary {
+    border-radius: 8px;
+}
+
+
+.ant-form-horizontal .ant-form-item-label {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+
+.modal-buttons {
+    border-radius: 8px;
+    float: right;
+    margin-left: 8px;
+    color: #2f403a;
+    border-color: #2f403a;
+}
+
+.modal-buttons:hover {
+    border-radius: 8px;
+    color: white;
+    background-color: #2f403a;
+    border-color: white;
+}
+
+.Input-Password{
+    border-radius: 8px;
+    width: 96%;
+    float: right;
+    height: 32px;
+    padding: 0!important;
+}
+
+.Input-Password:hover {
+    border-color: black!important;
+}
+
+.ant-input-affix-wrapper.ant-input-password.Input-Password:focus {
+    box-shadow: none!important;
+    border-color: black!important;
+}
+
+.Input-Select{
+    border-radius: 8px;
+    width: 96%;
+    float: right;
+    border: 1px solid silver;
+    height: 32px;
+    padding: 0!important;
+}
+
+.Input-Select:hover {
+    border-color: black!important;
+}
+
+.ant-input-suffix {
+    margin-right: 5px;
+}
+
+/*/////////Response//////////*/
+
+@media (max-width: 769px) {
+    .modal-content {
+        width: 50%;
+        position: fixed;
+    }
+
+    .ant-col.ant-form-item-label {
+        width: 100%;
+    }
+
+    .ant-select-selector {
+        width: 100%!important;
+        margin: 0!important;
+    }
+
+    .modal-form input {
+        width: 100%!important;
+        margin: 0!important;
+    }
+
+    .ant-row.ant-form-item {
+        margin: 2px;
+    }
+
+    .ant-form-item .ant-select, .ant-form-item .ant-cascader-picker {
+        width: 100%!important;
+    }
+
+    .modal-buttons {
+        margin-top: 5px;
+    }
+
+}
